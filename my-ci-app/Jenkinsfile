@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'test_jenkins', url: 'https://github.com/cidinhadevplace/jenkins_ansible.git'
+                checkout scm
             }
         }
         stage('Build') {
