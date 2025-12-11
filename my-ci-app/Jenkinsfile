@@ -7,19 +7,19 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build') {
+        stage('Step1') {
             steps {
                 echo "Running build step..."
                 sh 'echo "Pretend build commands"'
             }
         }
-        stage('Build') {
+        stage('Step2') {
             steps {
                 echo "Running build step..."
                 sh 'echo "Pretend build commands"'
             }
         }
-        stage('Test') {
+        stage('Step3') {
             steps {
                 echo "Running tests..."
                 sh 'echo "Pretend test commands"'
