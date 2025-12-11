@@ -13,6 +13,12 @@ pipeline {
                 sh 'echo "Pretend build commands"'
             }
         }
+        stage('Build') {
+            steps {
+                echo "Running build step..."
+                sh 'echo "Pretend build commands"'
+            }
+        }
         stage('Test') {
             steps {
                 echo "Running tests..."
