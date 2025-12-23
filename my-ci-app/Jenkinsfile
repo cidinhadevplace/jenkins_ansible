@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Step1') {
+            steps {
+                echo "Running build step..."
+                sh 'echo "Pretend build commands"'
+            }
+        }
+        stage('Step2') {
+            steps {
+                echo "Running build step..."
+                sh 'echo "Pretend build commands"'
+            }
+        }
+        stage('Step3') {
+            steps {
+                echo "Running tests..."
+                sh 'echo "Pretend test commands"'
+            }
+        }
+    }
+}
